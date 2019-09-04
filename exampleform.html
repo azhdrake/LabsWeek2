@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title> Student Feedback Form </title>
+		<link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" type="text/css" href="formstyle.css">
+	</head>
+
+	<body class="m-3">
+		<div class="jumbotron">
+			<h1>Tell us what you're thinking.</h1>
+		</div>
+		<form>
+			<div class="form-row">
+				<div class="col-sm-6">
+					<div class="instructions">
+					Imagine a tree. No, something smaller then that. More... red. More... metalic. What you should be picturing is not a tree, or even the idea of a tree, but something more. You have great power in your mind. You have great power outside your mind, but only some very specific places. Most places, you do not have anything but a dying body. Every place, you have a dying body, but most places it's dying much more rapidly. Most places, after all, are not contained within an atmosphere containing pressures withstandable by your body. Even on your native planet, there are many places where you could not survive. But so long as you keep to the fraction of a fraction of places that you can die less slowly in, you have great power. But than again, doesn't everybody?
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<label for="name"> Name: </label><input class="form-control" id="name" name="name" type="name"> <br>
+					<label for="email"> Email: </label> <input class="form-control" id="email" name="email" type="email"> <br>
+				
+					<label for="Comments"> Comments: </label><textarea class="form-control" id="Comments"  name="comments" required></textarea><br>
+					<p class="form-text">Current Student?</p>
+					<div class="form-check custom-control custom-radio">
+						<input class="custom-control-input" id="yes" name="Student" type="radio" checked >
+						<label class="custom-control-label" for="yes" > Yes </label>
+					</div>
+					<div class="custom-control custom-radio">
+						<input class="custom-control-input" id="no" name="Student" type="radio" >
+						<label class="custom-control-label" for="no" > No </label> 
+					</div>
+					<input class="btn btn-info ml-5" type="submit" >
+				</div>
+			</div>
+		</form>
+	</body>
+	
+

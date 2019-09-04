@@ -1,0 +1,23 @@
+h1{
+	font-size: 50px;
+	
+}
+
+a {
+	border: 5px solid;
+	height: 50px;
+	margin: 5px;
+	font-size: 40px;
+	font-family: Comic Sans MS;
+}
+
+#real-alert{
+	color: red;
+	border-color: red;
+	background-color: black;
+}
+
+#test-only{
+	color: green;
+	border-color: green;
+}
