@@ -1,4 +1,5 @@
 .jumbotron{
+	margin-bottom : 1em; 
 	color: white;
 	text-shadow: 0 0 5px #000000, 0 0 5px #000000;
 	text-align:center;
@@ -22,13 +23,6 @@ body{
 
 .description {
 	padding-left: 4vw;
-}
-
-section { 
-	margin: 0 auto; 
-	width: 50rem;
-	background-color: #e7dfdd;
-	padding: 1rem;
 }
 
 #italic{
