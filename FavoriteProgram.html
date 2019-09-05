@@ -3,45 +3,65 @@
 	<head>
 		<title>Snakesnakesnakesnakesnake</title>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="FavoriteStyles.css">
 	</head>
 
 	<body>
-		<div class="jumbotron">
+	<div class="container">
+		<div class="jumbotron jumbotron-fluid">
 		<h1 id=page-title>Snake 2.0</h1>
 		<h1>Snake Two: Snake Harder</h1>
 		</div>
-		<div class="row">
-			<div class="col-sm-6 description"><h2>Snake? 2.0?</h2>
-			<p>Snake 1.0 is a simple game where you control a string of connected boxes, the "snake", that moves along a grid into different singular boxes, the "kibble". Each time the snake runs into a kibble the snake grows by a set number of boxes. If the front box of the snake, the "head" runs into one of the other boxes of the snake, the "tail", the game ends. If the head of the snake runs into the end of the grid, the game ends. If you get board and leave, the game ends.</p>
 			
-			<p> I started with a rather buggy version of Snake 1.0 and modified it into the vastly superior 2.0, which was also rather buggy but - and this is the important part - they were <span id="italic">different</span> bugs.</p> 
-			<p>I added</p>
-			<ul>
-				<li> Special squares, the "walls", which end the game if the snake head runs into them! </li>
-				<li> Textures! I drew a beautiful carpet pattern for the snake to move across, a python-like pattern for the snake, and mossy brick walls that in no way matched the carpet for the walls. </li>
-				<li>Kibble types! Specifically:
+			<div class="row">
+				<div class="col-sm-6 description"><h2>Snake? 2.0?</h2>
+					<p>Snake 1.0 is a simple game where you control a string of connected boxes, the "snake", that moves along a grid into different singular boxes, the "kibble". Each time the snake runs into a kibble the snake grows by a set number of boxes. If the front box of the snake, the "head" runs into one of the other boxes of the snake, the "tail", the game ends. If the head of the snake runs into the end of the grid, the game ends. If you get board and leave, the game ends.</p>
+					
+					<p> I started with a rather buggy version of Snake 1.0 and modified it into the vastly superior 2.0, which was also rather buggy but - and this is the important part - they were <span id="italic">different</span> bugs.</p> 
+					<p>I added</p>
 					<ul>
-					<li> NORMAL TYPE: This kibble resets the snake color. </li>
-					<li> PINK TYPE: This kibble makes the snake pink! </li>
-					<li> BLUE TYPE: This kibble makes the snake blue! </li>
-					<li> GREEN TYPE: This kibble makes the snake green! </li>
-					<li> SHRINKSQARES TYPE: This kibble makes the square size - of the snake, kibble, and grid - smaller! </li>
-					<li> NYOOMTIME TYPE: This kibble makes the snake move faster! </li>
-					<li> WALLMAGEDDON: This kibble changes the position of the walls! </li>
-					<li> NEGATIVE SCORE: This kibble makes your score go down! You have no choice but to run into it unless you want to end the game! </li></li>
-				<li> Bug fixes! </li>
-				<li> New bugs! </li>
-				<li> Fixes for some, but not all, of the new bugs! </li>
-				<li> Some other stuff, probably! </li>
+						<li> Special squares, the "walls", which end the game if the snake head runs into them! </li>
+						<li> Textures! I drew a beautiful carpet pattern for the snake to move across, a python-like pattern for the snake, and a mossy brick pattern that in no way matched the carpet for the walls. </li>
+						<li>Kibble types! Specifically:
+							<ul>
+							<li> NORMAL TYPE: This kibble resets the snake color. </li>
+							<li> PINK TYPE: This kibble makes the snake pink! </li>
+							<li> BLUE TYPE: This kibble makes the snake blue! </li>
+							<li> GREEN TYPE: This kibble makes the snake green! </li>
+							<li> SHRINKSQARES TYPE: This kibble makes the square size - of the snake, kibble, and grid - smaller! </li>
+							<li> NYOOMTIME TYPE: This kibble makes the snake move faster! </li>
+							<li> WALLMAGEDDON: This kibble changes the position of the walls! </li>
+							<li> NEGATIVE SCORE: This kibble makes your score go down! You have no choice but to run into it unless you want to end the game! </li></li></ul>
+						<li> Bug fixes! </li>
+						<li> New bugs! </li>
+						<li> Fixes for some, but not all, of the new bugs! </li>
+						<li> Some other stuff, probably! </li>
+					</ul>
+					<a href="https://github.com/azhdrake/Snake">Take me to snurch</a>
+				</div>
+				<div class="col-sm-6 snakegamepictures ">
+				<img src="SnakeGame1.0Screenshot.png" alt="A plain white grid with red edges. There is a three square long snake that has a grey head and a black tail pointed towards the right edge of the grid. There is a green square in the lower right." title="Boring. Terrible. I hate it."></img><br>
+				<span id="img-caption">Fig 1: Snake 1.0, boring and awful.</span><br>
+				<img src="SnakeGameScreenshot.png" alt="A colorful grid with a background reminisent of a roller rink carpet. There is a winding snake that is bright green and patterened like a python. Scattered around the grid are grey brick patterned wall, which are one square in size. There is a grey square with a cyan question mark on it in the lower right." title="Awesome. Innovative. Beautiful."></img><br>
+				<span id="img-caption">Fig 2: Snake 2.0, objectivly awesome in every way.</span><br><br>
+				<pre><code>private void displayGameWon(Graphics g) {
+    g.clearRect(100, 100, 350, 350);
+    g.drawString("HOLY FLIPPING CRACKERJACKS!!!", 150, 150);
+    g.drawString("YOU WON SNAKE!!!", 150, 175);
+    g.drawString("I DIDN'T THINK IT COULD BE DONE!!!", 150, 200);
+    g.drawString("YOU SURE SHOWED ME!!!", 150, 225);
+    g.drawString("YOU BESTED ME AT MY OWN GAME!!!", 150, 250);
+    g.drawString("YOU HAVE USURPED ME!!!", 150, 275);
+    g.drawString("YOU'RE THE PROGRAMMER NOW!!!", 150, 300);
+    g.drawString("GOOD LUCK WITH THOSE BUGS!!!", 150, 325);
+    g.drawString("YOU'RE GONNA NEED IT!!!", 150, 350);
+    g.drawString("I'LL BE OVER HERE TAKING A NAP!!!", 150, 375);}
+				</code></pre>
+				<span id="img-caption">Fig 3: The code for the win statement. As you can see, every part of the project was taken very seriously.</span><br>
+				</div>
 			</div>
-			<div class="col-sm-6 snakegamepictures">
-			<img src="SnakeGame1.0Screenshot.png" alt="A plain white grid with red edges. There is a three square long snake that has a grey head and a black tail pointed towards the right edge of the grid. There is a green square in the lower right." title="Boring. Terrible. I hate it."></img><br>
-			<span id="img-caption">Fig 1: Snake 1.0, boring and awful.</span><br>
-			<img src="SnakeGameScreenshot.png" alt="A colorful grid with a background reminisent of a roller rink carpet. There is a winding snake that is bright green and patterened like a python. Scattered around the grid are grey brick patterned wall, which are one square in size. There is a grey square with a cyan question mark on it in the lower right." title="Awesome. Innovative. Beautiful."></img><br>
-			<span id="img-caption">Fig 2: Snake 2.0, objectivly awesome in every way.</span>
 			</div>
-
 	</body>
 
 </html>

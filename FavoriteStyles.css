@@ -1,4 +1,51 @@
+.jumbotron{
+	color: white;
+	text-shadow: 0 0 5px #000000, 0 0 5px #000000;
+	text-align:center;
+	background-image: url(Skin.png);
+	background-repeat: repeat;
+}
+
+body{
+	background-image: url(Floor.png);
+	background-repeat: repeat;
+	background-color: white;
+}
+
+.container {
+	background-color: white;
+}
+
+#page-title{
+	font-size: 5em;
+}
+
+.description {
+	padding-left: 4vw;
+}
+
+section { 
+	margin: 0 auto; 
+	width: 50rem;
+	background-color: #e7dfdd;
+	padding: 1rem;
+}
+
+#italic{
+	font-style: italic;
+}
+
+
 img{
 	max-width: 95%;
 	height: auto;
+	text-align: center;
+}
+
+.snakegamepictures {
+	font-size: .85em;
+}
+
+code{
+	font-family: 'Inconsolata', monospace;
 }
