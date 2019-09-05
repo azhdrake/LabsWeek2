@@ -1,31 +1,28 @@
-body{
-	font-family: 'Comfortaa', cursive;
-	background-color: #FFFFB7;
+body {
+	background-color: #FFFF77;
+	background: -moz-linear-gradient(#c777ff 0%, #ff7777 50%, #ffff77 100%);
+	background: -webkit-linear-gradient(#c777ff 0%, #ff7777 50%, #ffff77 100%);
+	background: linear-gradient(#c777ff 0%, #ff7777 50%, #ffff77 100%);	
+	font-family: 'Inconsolata', monospace;
 }
 
-.jumbotron{
+.jumbotron {
 	text-align: center;
-	background-color: #D9B7FF;
-	border: 4px solid #902CFF;
+	background-color: #FFFFBB;
+	padding: 3em;
 }
 
-.form-control{
-	border: 4px solid #902CFF;
+.primary-label {
+	font-weight: bold;
 }
 
-.instructions{
-	border: 4px solid #902CFF;
-	background-color: #ffffff;
-	padding: 20px;
+.form-text {
+	margin-bottom: .25em;
 }
 
 .form-control:focus {
 	border: 4px solid #D9B7FF;
 	box-shadow: 0 0 0 0 #fff, 0 0 0 0.2rem rgba(120, 0, 255, 0.15);
-}
-
-.custom-control-label::before{
-	background-color: #FFFF2D;
 }
 
 /* class names from https://stackoverflow.com/questions/48401587/bootstrap4-radio-button-background-and-fill-color */
@@ -35,11 +32,25 @@ body{
     border-radius: 50%;
 }
 .custom-radio .custom-control-input:active ~ .custom-control-label::before {
-    background-color: #D9B7FF; 
+    background-color: #D9B7FF;
 }
     
 /* the shadow that's displayed while the element is in focus */
 .custom-radio .custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(120, 0, 255, 0.25);
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before,
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+    background-color: #902CFF;  
+    border-radius: 25%;
+}
+.custom-checkbox .custom-control-input:active ~ .custom-control-label::before {
+    background-color: #D9B7FF;
+}
+    
+/* the shadow that's displayed while the element is in focus */
+.custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
     box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(120, 0, 255, 0.25);
 }
 
@@ -53,7 +64,7 @@ body{
 }
 
 .btn:hover{
-	background-color: #D9B7FF;
+	background-color: #FF4444;
 	outline: #D9B7FF;
 	box-shadow: 0 0 0 0 #fff, 0 0 0 0.2rem rgba(120, 0, 255, 0.15);
 }
